@@ -131,6 +131,7 @@
         </script>
 
 
+
 <script type="text/javascript">
     var _egoiwp = _egoiwp || {};
     (function(){
@@ -142,6 +143,25 @@
         s.parentNode.insertBefore(g,s);
     })();
 </script>
+<script type="text/javascript">
+    var _egoiaq = _egoiaq || [];
+    (function(){
+    var u=(("https:" == document.location.protocol) ? "https://egoimmerce.e-goi.com/" : "http://egoimmerce.e-goi.com/");
+    var u2=(("https:" == document.location.protocol) ? "https://cdn-te.e-goi.com/" : "http://cdn-te.e-goi.com/");
+    _egoiaq.push(['setClientId', "1121747"]);
+    _egoiaq.push(['setSubscriber', "Sample"]); // You can use the uid (unique identifier) or the email or the phone number
+    _egoiaq.push(['setCampaignId', "Sample"]); // Campaign Identifier
+    _egoiaq.push(['setTrackerUrl', u+'collect']);
+    _egoiaq.push(['trackPageView']);
+    _egoiaq.push(['enableLinkTracking']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=u2+'egoimmerce.js';
+    s.parentNode.insertBefore(g,s);
+    })();
+</script>                     
                                 
                                 
                                     
