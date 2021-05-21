@@ -1,5 +1,5 @@
 <?php
-define("USER", "root");
+define("USER", "u320803725_menthaecos");
 define("SERVER", "localhost");
-define("BD", "mentha_ecos");
-define("PASS", "");
+define("BD", "u320803725_storementha");
+define("PASS", "Menthaecos2020");

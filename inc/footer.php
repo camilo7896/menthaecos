@@ -40,6 +40,6 @@
             </div>
         </div>
     </div>
-    <br><br><br> <img src="../assets/img/logo.png" alt="">
+    <br><br><br>
     <h5 class="text-center tittles-pages-logo text-footer">MENTHA ECOS</h5>
 </footer>

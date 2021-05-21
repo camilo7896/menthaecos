@@ -130,7 +130,7 @@
         <i class="fa fa-times"></i>
         </button>
         <br><br>
-        <img src="../assets/img/logo.png" alt="">
+      
         <ul class="list-unstyled text-center">
             <li><a href="index.php">Inicio</a></li>
             <li><a href="product.php">Productos</a></li>
