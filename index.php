@@ -117,5 +117,18 @@
     </section>
 
     <?php include './inc/footer.php'; ?>
+
+    <script type="text/javascript">
+            var _egoiwf = _egoiwf || {};
+            (function(){
+                var u="https://cdn-static.egoiapp2.com/";
+                _egoiwf.code = "1e2e5bAN";
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript';
+                g.defer=true; g.async=true; g.src=u+'whatsapp/js/whatsapp.js';
+                s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+                                    
 </body>
 </html>

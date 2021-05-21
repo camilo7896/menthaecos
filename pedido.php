@@ -142,7 +142,7 @@
                   <select class="form-control" name="tipo-envio" data-toggle="tooltip" data-placement="top" title="Elige El Tipo De Envio">
                       <option value="" disabled="" selected="">Selecciona una opción</option>
                       <option value="Recoger Por Tienda">Recoger Por Tienda</option>
-                      <option value="Envio Por Currier">Enviar</option> 
+                      <option value="Envio Por Currier">Enviar a mi direccion</option> 
                   </select>
                </div>
                 <div class="form-group">
@@ -204,5 +204,27 @@
     </div>
     <div class="ResForm"></div>
     <?php include './inc/footer.php'; ?>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+<script type="text/javascript">
+            var _egoiwf = _egoiwf || {};
+            (function(){
+                var u="https://cdn-static.egoiapp2.com/";
+                _egoiwf.code = "1e2e5bAN";
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript';
+                g.defer=true; g.async=true; g.src=u+'whatsapp/js/whatsapp.js';
+                s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+                                    
 </body>
 </html>
