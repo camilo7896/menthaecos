@@ -43,7 +43,8 @@ include './library/consulSQL.php';
                                         </form>
                                         <div class="ResForm"></div>';
                                     }else{
-                                        echo '<p class="text-center"><small>Para agregar productos al carrito de compras debes iniciar sesion</small></p><br>';
+                                        echo '<p class="text-center"><small>Para agregar productos al carrito de compras debes <strong> iniciar sesion <strong></small></p><br>';
+                                        echo '<p> Si no tienes una cuenta <a href="registration.php"> <h5>Registrate aqui</a></h5></p>';
                                         echo '<button class="btn btn-lg btn-raised btn-info btn-block" data-toggle="modal" data-target=".modal-login"><i class="fa fa-user"></i>&nbsp;&nbsp; Iniciar sesion</button>';
                                     }
                                 }else{

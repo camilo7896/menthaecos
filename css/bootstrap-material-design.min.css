@@ -270,7 +270,8 @@ body .container-fluid .well-danger {
 .btn.btn-raised.btn-primary,
 .input-group-btn .btn.btn-fab.btn-primary,
 .input-group-btn .btn.btn-raised.btn-primary {
-    background-color: #009688;
+    background-color: #3f9e00;
+    border-radius: 23px;
     color: rgba(255, 255, 255, .84)
 }
 
