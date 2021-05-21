@@ -129,6 +129,19 @@
                 s.parentNode.insertBefore(g,s);
             })();
         </script>
+
+<script type="text/javascript">
+    var _egoiwp = _egoiwp || {};
+    (function(){
+        var u="https://cdn-static.egoiapp2.com/";
+        _egoiwp.code = "183897b09a351861577ad7cabd430a5b";
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'webpush.js';
+        s.parentNode.insertBefore(g,s);
+    })();
+</script>
+                                
                                     
 </body>
 </html>
