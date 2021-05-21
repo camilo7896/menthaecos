@@ -164,7 +164,8 @@ footer a {
 /* ========================================= product styles ======================================*/
 
 #container-page-product {
-    background-image: url(../assets/img/logo.png);
+    background-image: url(..);
+    /*10*/
 }
 
 #store,
@@ -184,7 +185,8 @@ footer a {
 /* ========================================= registration styles ======================================*/
 
 #container-page-registration {
-    background-image: url(../assets/img/logo.png);
+    background-image: url();
+    /*10*/
 }
 
 #form-registration {
@@ -203,7 +205,8 @@ footer a {
 /* ========================================= configAdmin styles ======================================*/
 
 #container-page-configAdmin {
-    background-image: url(../assets/img/logo.png);
+    background-image: url();
+    /*10*/
 }
 
 #prove-product-cat-config {
