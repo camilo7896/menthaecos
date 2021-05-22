@@ -26,7 +26,7 @@
                         <div class="row">
                           <div class="col-xs-10 col-xs-offset-1">
                             <p class="text-center lead">Selecciona un metodo de pago</p>
-                            <img class="img-responsive center-all-contens" src="assets/img/credit-card.png">
+                            <img class="img-responsive center-all-contens" src="assets/img/bancolombia-a-la-mano.png">
                             <p class="text-center">
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
@@ -34,6 +34,21 @@
                         </div>
                       </div>
                 <?php
+                /*  DAVIPLATA */
+                   ?>
+                   <br><br><br>
+                   <div class="container-fluid">
+                     <div class="row">
+                       <div class="col-xs-10 col-xs-offset-1">
+                         <p class="text-center lead">Selecciona un metodo de pago</p>
+                         <img class="img-responsive center-all-contens" src="assets/img/daviplata.png">
+                         <p class="text-center">
+                           <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+             <?php
                     }else{
                       echo '<p class="text-center lead">No tienes pedidos pendientes de pago</p>';
                     }
@@ -134,7 +149,7 @@
             </p>
                 <?php if($_SESSION['UserType']=="Admin"): ?>
                 <div class="form-group">
-                    <label>Numero de deposito</label>
+                    <label>Ingresa el valor que consignaste</label>
                     <input class="form-control" type="text" name="NumDepo" placeholder="Numero de deposito" maxlength="50" required="">
                 </div>
                 <div class="form-group">
