@@ -8,20 +8,20 @@
             ?>
                   <div class="container-form-admin">
                   <form action="./process/updateBank.php" method="POST" role="form" class="form-content FormCatElec" data-form="update">
-                    <h3 class="text-info text-center">Actualizar Cuenta de banco</h3>
+                    <h3 class="text-info text-center">Bancolombia</h3>
                     <input type="hidden" name="id" value="<?php echo $bankD['id']; ?>">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="form-group label-floating">
                                     <label class="control-label">Número de cuenta</label>
-                                    <input class="form-control" type="text" name="bancoCuenta" value="<?php echo $bankD['NumeroCuenta']; ?>" maxlength="50" required="">
+                                    <input class="form-control" type="text" name="bancoCuenta" value="<?php echo $bankD['NumeroCuentaBancolombia']; ?>" maxlength="50" required="">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="form-group label-floating">
                                     <label class="control-label">Nombre del banco</label>
-                                    <input class="form-control" type="text" name="bancoNombre" value="<?php echo $bankD['NombreBanco']; ?>" maxlength="50" required="">
+                                    <input class="form-control" type="text" name="bancoNombre" value="<?php echo $bankD['NombreBancoBancolombia']; ?>" maxlength="50" required="">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
@@ -85,6 +85,8 @@
     </div>
 </div>
 
+
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
@@ -95,20 +97,20 @@
             ?>
                   <div class="container-form-admin">
                   <form action="./process/updateBank.php" method="POST" role="form" class="form-content FormCatElec" data-form="update">
-                    <h3 class="text-info text-center">Actualizar Cuenta de banco</h3>
+                    <h3 class="text-info text-center">Daviplata</h3>
                     <input type="hidden" name="id" value="<?php echo $bankD['id']; ?>">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6">
                                 <div class="form-group label-floating">
                                     <label class="control-label">Número de cuenta</label>
-                                    <input class="form-control" type="text" name="bancoCuenta" value="<?php echo $bankD['NumeroCuenta']; ?>" maxlength="50" required="">
+                                    <input class="form-control" type="text" name="bancoCuenta" value="<?php echo $bankD['NumeroCuentaDaviplata']; ?>" maxlength="50" required="">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <div class="form-group label-floating">
                                     <label class="control-label">Nombre del banco</label>
-                                    <input class="form-control" type="text" name="bancoNombre" value="<?php echo $bankD['NombreBanco']; ?>" maxlength="50" required="">
+                                    <input class="form-control" type="text" name="bancoNombre" value="<?php echo $bankD['NombreBancoDaviplata']; ?>" maxlength="50" required="">
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-6">
@@ -171,6 +173,7 @@
         </div>
     </div>
 </div>
+
 
 <div class="container">
     <div class="row">
