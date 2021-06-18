@@ -11,6 +11,7 @@
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
                   <a href="index.php" class="table-cell-td">Inicio</a>
+                  <a href="index.php" class="table-cell-td">Nosotros</a>
                   <a href="product.php" class="table-cell-td">Productos</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
