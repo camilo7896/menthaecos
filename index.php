@@ -4,6 +4,7 @@
 <link rel="icon" href="./assets/img/logo.png" type="">
     <title>MENTHA ECOS</title>
     <?php include './inc/link.php'; ?>
+ 
 </head>
 
 <body id="container-page-index">
@@ -16,24 +17,34 @@
             <li data-target="#slider-store" data-slide-to="0" class="active"></li>
             <li data-target="#slider-store" data-slide-to="1"></li>
             <li data-target="#slider-store" data-slide-to="2"></li>
+            <li data-target="#slider-store" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="./assets/img/slider-pañal-1.png" alt="slider-pañal-1">
+        <div class="item active">
+                <img loading="lazy" src="./assets/img/promo-png.png" alt="slider-pañal-1">
                 <div class="carousel-caption">
                     Text Slider 1
                 </div>
             </div>
+
+            <!-- <div class="item active">
+                <img loading="lazy" src="./assets/img/slider-pañal-1.png" alt="slider-pañal-1">
+                <div class="carousel-caption">
+                    Text Slider 1
+                </div>
+            </div> -->
+
             <div class="item">
-                <img src="./assets/img/slider-toallas-2.png" alt="slider-toallas-2">
+                <img loading="lazy" src="./assets/img/slider-toallas-2.png" alt="slider-toallas-2">
                 <div class="carousel-caption">
                     Text Slider 2
                 </div>
             </div>
+
             <div class="item">
-                <img src="./assets/img/slider-petLove-3.png" alt="slider3">
+                <img loading="lazy" src="./assets/img/slider-petLove-3.png" alt="slider3">
                 <div class="carousel-caption">
                     Text Slider 3
                 </div>
@@ -50,7 +61,10 @@
             <span class="sr-only">Next</span>
         </a>
     </section>
-    
+    <center><section class="video">
+    <h2>Pañal ecologico Mentha Ecos</h2>
+    <video loading="lazy" src="video/muestra del pañal.mp4" width="60%" height="auto" controls></video>
+    </section></center> 
 
     <section id="new-prod-index">    
          <div class="container">
@@ -161,7 +175,8 @@
     g.src=u2+'egoimmerce.js';
     s.parentNode.insertBefore(g,s);
     })();
-</script>                     
+</script>    
+<script src="proveedor.js"></script>                 
                                 
                                 
                                     
