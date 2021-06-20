@@ -63,7 +63,7 @@
     </section>
     <center><section class="video">
     <h2>Pañal ecologico Mentha Ecos</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/V2yB4GmvjHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="200" height="auto" src="https://www.youtube.com/embed/V2yB4GmvjHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section></center> 
 
     <section id="new-prod-index">    
