@@ -114,99 +114,22 @@
     </section>
     <div class="modal fade" id="PagoModalTran" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
-        <form class="modal-content FormCatElec" action="process/confirmcompra.php" method="POST" role="form" data-form="save">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Pago por transaccion bancaria</h4>
-          </div>
-          <div class="modal-body">
-            <?php
-              $consult1=ejecutarSQL::consultar("SELECT * FROM cuentabanco");
-              if(mysqli_num_rows($consult1)>=1){
-                $datBank=mysqli_fetch_array($consult1, MYSQLI_ASSOC);
-            ?>
-            <p>Por favor haga el deposito en la siguiente cuenta de banco.</p><br>
-            <p>
-              <strong>Nombre del banco:</strong> <?php echo $datBank['NombreBanco']; ?><br>
-              <strong>Numero de cuenta:</strong> <?php echo $datBank['NumeroCuenta']; ?><br>
-              <strong>Nombre del beneficiario:</strong> <?php echo $datBank['NombreBeneficiario']; ?><br>
-              <strong>Tipo de cuenta:</strong> <?php echo $datBank['TipoCuenta']; ?><br><br>
-            </p>
-            <br>
-            <p>
-              <strong>Nombre del banco:</strong> <?php echo $datBank['NombreBancoDaviplata']; ?><br>
-              <strong>Numero de cuenta:</strong> <?php echo $datBank['NumeroCuentaDaviplata']; ?><br>
-              <strong>Nombre del beneficiario:</strong> <?php echo $datBank['NombreBeneficiarioDaviplata']; ?><br>
-              <strong>Tipo de cuenta:</strong> <?php echo $datBank['TipoCuentaDaviplata']; ?><br><br>
-            </p>
-                <?php if($_SESSION['UserType']=="Admin"): ?>
-                <div class="form-group">
-                    <label>Numero de deposito</label>
-                    <input class="form-control" type="text" name="NumDepo" placeholder="Numero de deposito" maxlength="50" required="">
-                </div>
-                <div class="form-group">
-                  <span>Tipo De Envio</span>
-                  <select class="form-control" name="tipo-envio" data-toggle="tooltip" data-placement="top" title="Elige El Tipo De Envio">
-                      <option value="" disabled="" selected="">Selecciona una opción</option>
-                      <option value="Recoger Por Tienda">Recoger Por Tienda</option>
-                      <option value="Envio Por Currier">Enviar</option> 
-                  </select>
-               </div>
-                <div class="form-group">
-                    <label>Numero de documento</label>
-                    <input class="form-control" type="text" name="Cedclien" placeholder="Numero de documento" maxlength="15" required="">
-                </div>
-                <div class="form-group">
-                      <input type="file" name="comprobante">
-                      <div class="input-group">
-                        <input type="text" readonly="" class="form-control" placeholder="Seleccione la imagen del comprobante...">
-                          <span class="input-group-btn input-group-sm">
-                            <button type="button" class="btn btn-fab btn-fab-mini">
-                              <i class="fa fa-file-image-o" aria-hidden="true"></i>
-                            </button>
-                          </span>
-                      </div>
-                        <p class="help-block"><small>Tipos de archivos admitidos, imagenes .jpg y .png. Maximo 5 MB</small></p>
-                    </div>
-                <?php else: ?>
-                    <div class="form-group">
-                        <label>Numero de deposito</label>
-                        <input class="form-control" type="text" name="NumDepo" placeholder="Numero de deposito" maxlength="50" required="">
-                    </div>
-                    <div class="form-group">
-                      <span>Tipo De Envio</span>
-                      <select class="form-control" name="tipo-envio" data-toggle="tooltip" data-placement="top" title="Elige El Tipo De Envio">
-                          <option value="" disabled="" selected="">Selecciona una opción</option>
-                          <option value="Recoger Por Tienda">Recoger Por Tienda</option>
-                          <option value="Envio Por Currier">Enviar a mi direccion</option> 
-                      </select>
-                   </div>
-                    <input type="hidden" name="Cedclien" value="<?php echo $_SESSION['UserNIT']; ?>">
-                    <div class="form-group">
-                      <input type="file" name="comprobante">
-                      <div class="input-group">
-                        <input type="text" readonly="" class="form-control" placeholder="Seleccione la imagen del comprobante...">
-                          <span class="input-group-btn input-group-sm">
-                            <button type="button" class="btn btn-fab btn-fab-mini">
-                              <i class="fa fa-file-image-o" aria-hidden="true"></i>
-                            </button>
-                          </span>
-                      </div>
-                        <p class="help-block"><small>Tipos de archivos admitidos, imagenes .jpg y .png. Maximo 5 MB</small></p>
-                    </div>
-                <?php 
-                endif;
-              }else{
-                echo "Ocurrio un error: Parese ser que no se ha configurado las cuentas de banco";
-              }
-              mysqli_free_result($consult1);
-            ?>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger btn-sm btn-raised" data-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-primary btn-sm btn-raised">Confirmar</button>
-          </div>
-        </form>
+      <form method="post" action="https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/">
+  <input name="merchantId"    type="hidden"  value="508029"   >
+  <input name="accountId"     type="hidden"  value="512321" >
+  <input name="description"   type="hidden"  value="Ventas en linea"  >
+  <input name="referenceCode" type="hidden"  value="pago-001" >
+  <input name="amount"        type="hidden"  value="20000"   >
+  <input name="tax"           type="hidden"  value="3193"  >
+  <input name="taxReturnBase" type="hidden"  value="16806" >
+  <input name="currency"      type="hidden"  value="COP" >
+  <input name="signature"     type="hidden"  value="7ee7cf808ce6a39b17481c54f2c57acc"  >
+  <input name="test"          type="hidden"  value="0" >
+  <input name="buyerEmail"    type="hidden"  value="test@test.com" >
+  <input name="responseUrl"    type="hidden"  value="http://www.test.com/response" >
+  <input name="confirmationUrl"    type="hidden"  value="http://www.test.com/confirmation" >
+  <input name="Submit"        type="submit"  value="Enviar" >
+</form>
       </div>
     </div>
     <div class="ResForm"></div>
