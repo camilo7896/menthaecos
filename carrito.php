@@ -26,20 +26,20 @@
                                 $consulta=ejecutarSQL::consultar("SELECT * FROM producto WHERE CodigoProd='".$codeProd['producto']."'");
                                 while($fila = mysqli_fetch_array($consulta, MYSQLI_ASSOC)) {
                                     $pref=number_format(($fila['Precio']-($fila['Precio']*($fila['Descuento']/100))), 2, '.', '');
-                                        echo "<tbody>
-                                            <tr>
-                                                <td>".$fila['NombreProd']."</td>
-                                                <td> ".$pref."</td>
-                                                <td> ".$codeProd['cantidad']."</td>
-                                                <td> ".$pref*$codeProd['cantidad']."</td>
-                                                <td>
-                                                    <form action='process/quitarproducto.php' method='POST' class='FormCatElec' data-form=''>
-                                                        <input type='hidden' value='".$codeProd['producto']."' name='codigo'>
-                                                        <button class='btn btn-danger btn-raised btn-xs'>Eliminar</button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        </tbody>";
+                                        // echo "<tbody>
+                                        //     <tr>
+                                        //         <td>".$fila['NombreProd']."</td>
+                                        //         <td> ".$pref."</td>
+                                        //         <td> ".$codeProd['cantidad']."</td>
+                                        //         <td> ".$pref*$codeProd['cantidad']."</td>
+                                        //         <td>
+                                        //             <form action='process/quitarproducto.php' method='POST' class='FormCatElec' data-form=''>
+                                        //                 <input type='hidden' value='".$codeProd['producto']."' name='codigo'>
+                                        //                 <button class='btn btn-danger btn-raised btn-xs'>Eliminar</button>
+                                        //             </form>
+                                        //         </td>
+                                        //     </tr>
+                                        // </tbody>";
                                 $suma += $pref*$codeProd['cantidad'];
                                 $sumaA += $codeProd['cantidad'];
                                 }
@@ -50,7 +50,7 @@
                             <p class="text-center">
                             <a href="product.php" class="btn btn-primary btn-raised btn-lg">Seguir comprando</a>
                             <a href="process/vaciarcarrito.php" class="btn btn-success btn-raised btn-lg">Vaciar el carrito</a>
-                            <a href="pedido.php" class="btn btn-danger btn-raised btn-lg">Confirmar el pedido</a>
+                            // <a href="pedido.php" class="btn btn-danger btn-raised btn-lg">Confirmar el pedido</a>
                             </p>
                             ';
                         }else{
@@ -77,7 +77,7 @@
 </form>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
     <?php include './inc/footer.php'; ?>
 </body>
