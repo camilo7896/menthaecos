@@ -1,13 +1,9 @@
-@font-face {
+z@font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
     src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-.responsive {
-    max-width: 100%;
 }
 
 * {
@@ -49,7 +45,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #086d4f;
+    background: #04756a;
     opacity: 0.9;
 }
 
@@ -152,7 +148,7 @@ form.form_contact textarea {
 
 form.form_contact input[type="submit"] {
     width: 180px;
-    background: #049e1d;
+    background: #40bbec;
     padding: 10px;
     border: none;
     border-radius: 25px;
@@ -165,7 +161,7 @@ form.form_contact input[type="submit"] {
 }
 
 form.form_contact input[type="submit"]:hover {
-    background: #08d9ec;
+    background: #3371B6;
 }
 
 
