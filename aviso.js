@@ -1,0 +1,1 @@
+alert(`por el mometo no puedes realizar compras por aqui. Te invito a comprar via whatsapp.  <br> Gracias`);

@@ -170,6 +170,7 @@ include './library/consulSQL.php';
                 echo '<h2 class="text-center">Lo sentimos, no hay productos ni categorías registradas en la tienda</h2>';
               endif;
             ?>
+            <img src="https://egoiapp2.com/wp/whatsapp/img/icon-whatsapp.svg" class="icon" onclick="whatsapp.open()" width="70" height="70">
         </div>
     </section>
     <?php include './inc/footer.php'; ?>

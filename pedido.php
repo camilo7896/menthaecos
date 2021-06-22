@@ -209,7 +209,9 @@
         </form>
       </div>
     </div>
+    <img src="https://egoiapp2.com/wp/whatsapp/img/icon-whatsapp.svg" class="icon" onclick="whatsapp.open()" width="70" height="70">
     <div class="ResForm"></div>
     <?php include './inc/footer.php'; ?>
+    <script src="aviso.js"></script>
 </body>
 </html>
