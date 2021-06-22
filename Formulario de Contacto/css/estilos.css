@@ -1,4 +1,4 @@
-z@font-face {
+@font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
     src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
@@ -25,13 +25,11 @@ body {
 /* FORMULARIO =================================== */
 
 .form_wrap {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+    width: 1050px;
+    height: 530px;
     margin: 50px auto;
     display: flex;
-    flex-direction: row;
-    background: rgb(61, 110, 96);
+    background: #fff;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -47,7 +45,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: #04756a;
+    background: #4091EC;
     opacity: 0.9;
 }
 
@@ -150,7 +148,7 @@ form.form_contact textarea {
 
 form.form_contact input[type="submit"] {
     width: 180px;
-    background: #40bbec;
+    background: #4091EC;
     padding: 10px;
     border: none;
     border-radius: 25px;
