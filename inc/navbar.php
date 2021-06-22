@@ -137,6 +137,9 @@
             <li><a href="product.php">Productos</a></li>
             <li><a href="nosotros.php" class="table-cell-td">Nosotros</a></li>
             <li><a href="carrito.php">Carrito</a></li>
+            <li><a href="/Formulario de Contacto/indexForm.html">Quiero ser distribuidor</a></li>
+
+
             <?php 
                 if(!$_SESSION['nombreAdmin']==""){
                     echo '<li><a href="configAdmin.php">Administración</a></li>';
@@ -149,7 +152,9 @@
                     echo '<li><a href="registration.php">Registro</a></li>';
                 }
             ?>
+            
         </ul>
+        
     </div>
     <?php if(isset($_SESSION['nombreUser'])): ?>
     <div class="modal fade" id="ModalUpUser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <link rel="icon" href="./assets/img/logo.png" type="">
+<link rel="stylesheet" href="./css/boton.css">
     <title>MENTHA ECOS</title>
     <?php include './inc/link.php'; ?>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -63,10 +64,15 @@
             <span class="sr-only">Next</span>
         </a>
     </section>
-    <center><section class="video">
-    <h2>Pañal ecologico Mentha Ecos</h2>
+
+ 
+    <div class="video-responsive">
+        <!-- <section class="video"> -->
+       
     <iframe width="200" height="auto" src="https://www.youtube.com/embed/V2yB4GmvjHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    <!-- </section> -->
+    
+    </div>
    
     <a id="btn1" href="/Formulario de Contacto/indexForm.html"> <button class="boton" type="button" data-toggle="modal" data-target="#myModal">Quiero ser distribuidor</button>    <section id="new-prod-index">    
     </a>

@@ -1,0 +1,30 @@
+.boton {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: rgb(14, 160, 1);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: 80%;
+    left: 12%;
+    position: absolute;
+    top: 12%;
+    width: 80%;
+}

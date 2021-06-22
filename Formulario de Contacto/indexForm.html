@@ -16,46 +16,48 @@
 </head>
 
 <body>
+    <div class="container">
+        <section class="form_wrap">
 
-    <section class="form_wrap">
+            <section class="cantact_info">
+                <section class="info_title">
+                    <span class="fa fa-user-circle"></span>
+                    <h4>INFORMACION<br>DE CONTACTO</h4>
+                </section>
+                <div class="informacion1">
+                    <section class="info_items">
+                        <p><span class="fa fa-envelope"></span> menthaecos27@gmail.com</p>
+                        <p><span class="fa fa-mobile"></span> +57 3105057173</p>
+                    </section>
+                </div>
+            </section>
 
-        <section class="cantact_info">
-            <section class="info_title">
-                <span class="fa fa-user-circle"></span>
-                <h2>INFORMACION<br>DE CONTACTO</h2>
-            </section>
-            <section class="info_items">
-                <p><span class="fa fa-envelope"></span> menthaecos27@gmail.com</p>
-                <p><span class="fa fa-mobile"></span> +57 3105057173</p>
-            </section>
+            <form action="enviar.php" method="post" class="form_contact">
+                <h2>Envia un mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombres *</label>
+                    <input type="text" id="names" name="nombre" required>
+
+                    <label for="phone">Telefono / Celular</label>
+                    <input type="text" id="phone" name="telefono">
+
+                    <label for="email">Correo electronico *</label>
+                    <input type="text" id="email" name="correo" required>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+
+                    <input type="submit" value="Enviar Mensaje" id="btnSend">
+                    <hr>
+                    <center>
+                        <a href="/index.php"> <input type="button" value="volver"></a>
+                    </center>
+                </div>
+            </form>
+
         </section>
 
-        <form action="enviar.php" method="post" class="form_contact">
-            <h2>Envia un mensaje</h2>
-            <div class="user_info">
-                <label for="names">Nombres *</label>
-                <input type="text" id="names" name="nombre" required>
-
-                <label for="phone">Telefono / Celular</label>
-                <input type="text" id="phone" name="telefono">
-
-                <label for="email">Correo electronico *</label>
-                <input type="text" id="email" name="correo" required>
-
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <input type="submit" value="Enviar Mensaje" id="btnSend">
-                <hr>
-                <center>
-                    <a href="/index.php"> <input type="button" value="volver"></a>
-                </center>
-            </div>
-        </form>
-
-
-    </section>
-
+    </div>
 </body>
 
 </html>

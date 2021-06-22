@@ -56,7 +56,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../fondo.jpg');
+    /* background-image: url('../fondo.jpg'); */
     background-size: cover;
     background-position: center center;
 }
@@ -255,4 +255,16 @@ form.form_contact input[type="submit"]:hover {
 
 .mensaje-exito a:hover {
     background: #3371B6;
+}
+
+.container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    background: white;
 }
